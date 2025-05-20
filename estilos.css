@@ -1,9 +1,35 @@
 body{
     background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif;    
+    
 }
 
 h1{
     color:navy;
     text-align: center;
+}
+
+/*Comienza la tarea*/
+form{
+    background-color: white;
+    width: 300px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+/*Termina la tarea*/
+
+/*Boton*/
+Button {
+    padding: 10px 20px;    
+    border-radius: 5px;
+    background-color: navy;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0044cc;
 }
