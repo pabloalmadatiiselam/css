@@ -1,7 +1,8 @@
+/*SELECTORES DE ETIQUETAS*/
 body{
     background-color: #f2f2f2;
-    font-family: Arial, sans-serif;    
-    
+    font-family: Arial, sans-serif;  
+    font-size: 16px; 
 }
 
 h1{
@@ -12,22 +13,42 @@ h1{
 /*Comienza la tarea*/
 form{
     background-color: white;
-    width: 300px;
+    width: 80%;
+    max-width: 500px;
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
+    border: 1px solid #d0d0d0;
 }
 /*Termina la tarea*/
 
+Button {
+    padding: 10px 20px;        
+    border-radius: 5px;    
+    background-color:#003399;   
+    color: white;   
+    border: none;
+    cursor: pointer;    
+}
+
+/*SELECTORES DESCENDIENTES*/
 form label{
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
     }
-/*Boton*/
-form input[type="text"],
 form select{
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+
+}
+
+/*SELECTORES DE ATRIBUTOS*/
+input[type="text"]{
     width: 90%;
     padding: 8px;
     margin-bottom: 10px;
@@ -35,19 +56,53 @@ form select{
     border-radius: 4px;
 }
 
-form input[type="checkbox"]{
+input[type="checkbox"]{
     margin-top: 10px;
 }
 
-Button {
-    padding: 10px 20px;        
-    border-radius: 5px;    
-    background-color: navy;    
-    color: white;   
-    border: none;
-    cursor: pointer;    
+
+/*SELECTORES DE CLASES*/
+.notas{
+    background-color: #f0f8ff;
+    border: 1px solid #99ccff;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 20px auto;
+    width: 80%;
+    max-width: 600px;
+    text-align: center;
 }
 
+
+
+/*COMBINACION DESCENDIENTE*/
+.notas h2{
+    color: #003366;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.notas p{
+    font-size: 1em;
+    color: #333;
+}
+
+
+
+/*SELECTORES DE ID*/
+#contenedor{
+    background-color: #b0c4de;
+    padding: 30px;
+    border: 2px solid #2a5883;    
+    border-radius: 15px;
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;   
+}
+
+
+/*PSEUDOCLASES*/
 button:hover {
     background-color: #0044cc;
 }
+ 
